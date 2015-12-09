@@ -1,7 +1,7 @@
 %{?_javapackages_macros:%_javapackages_macros}
 Name:          jdo2-api
 Version:       2.2
-Release:       6.0%{?dist}
+Release:       6.1
 Summary:       Implementation of JSR 243: Java Data Objects 2.0
 
 License:       ASL 2.0
@@ -66,31 +66,9 @@ install -pm 644 pom.xml %{buildroot}%{_mavenpomdir}/JPP-%{name}.pom
 mkdir -p %{buildroot}%{_javadocdir}/%{name}
 cp -pr  dist/docs/api/* %{buildroot}%{_javadocdir}/%{name}
 
-%files
-%{_javadir}/%{name}.jar
-%{_mavenpomdir}/JPP-%{name}.pom
-%{_mavendepmapfragdir}/%{name}
+%files -f %{name}-%{version}/.mfiles
 %doc LICENSE.txt NOTICE.txt
 
 %files javadoc
 %{_javadocdir}/%{name}
 %doc LICENSE.txt NOTICE.txt
-
-%changelog
-* Sat Aug 03 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.2-6
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
-
-* Thu Feb 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.2-5
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
-
-* Thu Jul 19 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.2-4
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
-
-* Thu May 31 2012 gil cattaneo <puntogil@libero.it> 2.2-3
-- Install LICENSE.txt and NOTICE.txt included in source archive
-
-* Thu May 31 2012 gil cattaneo <puntogil@libero.it> 2.2-2
-- Install LICENSE.txt and NOTICE.txt
-
-* Mon May 28 2012 gil cattaneo <puntogil@libero.it> 2.2-1
-- Initial rpm
