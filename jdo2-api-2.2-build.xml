@@ -172,6 +172,7 @@
           <attribute name="Bundle-Name" value="Java Data Objects"/>
           <attribute name="Bundle-SymbolicName" value="javax.jdo"/>
           <attribute name="Bundle-Vendor" value="Apache"/>
+          <attribute name="Bundle-Version" value="2.2"/>
           <attribute name="Export-Package" value="javax.jdo,javax.jdo.annotations,javax.jdo.datastore,javax.jdo.identity,javax.jdo.listener,javax.jdo.spi"/>
           <attribute name="Import-Package" value="javax.transaction;resolution:=optional,javax.persistence;resolution:=optional"/>
         </manifest>
