@@ -2,7 +2,7 @@
 
 Name:          jdo2-api
 Version:       2.2
-Release:       6.2
+Release:       6.3
 Summary:       Implementation of JSR 243: Java Data Objects 2.0
 Group:		Development/Java
 License:       ASL 2.0
