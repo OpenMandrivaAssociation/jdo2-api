@@ -6,7 +6,7 @@ Release:       6.3
 Summary:       Implementation of JSR 243: Java Data Objects 2.0
 Group:		Development/Java
 License:       ASL 2.0
-Url:           http://db.apache.org/jdo/
+Url:           https://db.apache.org/jdo/
 Source0:       http://svn.apache.org/repos/asf/db/jdo/releases/2.2/dist/db/jdo/2.2/jdo2-api-2.2-src.tar.gz
 Source1:       jdo2-api-2.2-build.xml
 # changed javax.transaction transaction-api 1.1 with geronimo-jta_1.1_spec
